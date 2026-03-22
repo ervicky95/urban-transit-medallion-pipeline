@@ -1,0 +1,21 @@
+{
+    "name": "nyctxdlsink",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "DataLakeStorageLS",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Parquet",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "folderPath": "trips2025data",
+                "fileSystem": "bronze"
+            },
+            "compressionCodec": "snappy"
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

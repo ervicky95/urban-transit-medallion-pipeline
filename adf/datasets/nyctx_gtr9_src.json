@@ -1,0 +1,28 @@
+{
+    "name": "nyctx_gtr9_src",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "nyc_web",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "p_monthgtr": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "Parquet",
+        "typeProperties": {
+            "location": {
+                "type": "HttpServerLocation",
+                "relativeUrl": {
+                    "value": "trip-data/green_tripdata_2025-@{dataset().p_monthgtr}.parquet",
+                    "type": "Expression"
+                }
+            },
+            "compressionCodec": "snappy"
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

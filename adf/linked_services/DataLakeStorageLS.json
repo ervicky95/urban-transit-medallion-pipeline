@@ -1,0 +1,12 @@
+{
+    "name": "DataLakeStorageLS",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "AzureBlobFS",
+        "typeProperties": {
+            "url": "https://nyctxvicdl.dfs.core.windows.net/",
+            "encryptedCredential": "REDACTED_FOR_SECURITY"
+        }
+    }
+}
