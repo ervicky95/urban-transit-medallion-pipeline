@@ -1,4 +1,4 @@
-# 🚕 Azure NYC Taxi: End-to-End Medallion Pipeline
+# Urban Transit Medallion Pipeline
 
 ## 📌 Project Overview
 This repository contains a production-grade data engineering pipeline built on **Microsoft Azure**. The project automates the ingestion, transformation, and serving of NYC Green Taxi records. 
